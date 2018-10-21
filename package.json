@@ -1,20 +1,20 @@
 {
   "name": "react-clap-button",
   "description": "A Medium like clap button",
-  "homepage": "https://github.com/kikobeats/react-clap-button",
+  "homepage": "https://github.com/aykutkardas/react-clap-button",
   "version": "1.0.8",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "author": {
-    "email": "josefrancisco.verdu@gmail.com",
-    "name": "Kiko Beats",
-    "url": "https://github.com/Kikobeats"
+    "email": "aykutkrds@gmail.com",
+    "name": "Aykut Kardaş",
+    "url": "https://github.com/aykutkardas"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kikobeats/react-clap-button.git"
+    "url": "git+https://github.com/aykutkardas/react-clap-button.git"
   },
   "bugs": {
-    "url": "https://github.com/kikobeats/react-clap-button/issues"
+    "url": "https://github.com/aykutkardas/react-clap-button/issues"
   },
   "keywords": [
     "button",
@@ -23,6 +23,7 @@
     "reaction"
   ],
   "dependencies": {
+    "babel": "^6.23.0",
     "mo-js": "~0.288.2",
     "polished": "~2.2.0",
     "react-transition-group": "^2.5.0",
@@ -61,10 +62,10 @@
     "node": ">= 8"
   },
   "files": [
-    "lib"
+    "src"
   ],
   "scripts": {
-    "build": "NODE_ENV=production BABEL_ENV=production babel src -d lib",
+    "build": "SET NODE_ENV=production SET BABEL_ENV=production babel src -d lib",
     "build-storybook": "build-storybook",
     "dev": "start-storybook -p 6006",
     "lint": "standard-markdown README.md && standard src stories",
